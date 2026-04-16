@@ -9,25 +9,29 @@ const NOTICIAS = [
 
 export function News() {
     return (
-        <section id="noticias" className="py-24 px-6 max-w-7xl mx-auto">
-            <div className="flex items-end justify-between mb-12 border-b border-gold-corp/20 pb-4">
-                <h2 className="font-display text-4xl text-gold-corp uppercase tracking-tighter">Últimas Noticias</h2>
-                <a href="#" className="text-gold-corp/60 text-xs uppercase tracking-widest hover:text-gold-corp">Ver todas</a>
+        <section id="noticias" className="py-24 px-6 max-w-7xl mx-auto bg-background">
+            <div className="flex items-end justify-between mb-12 border-b border-secondary/20 pb-4">
+                <h2 className="font-display text-4xl text-primary uppercase tracking-tighter">
+                    Últimas Noticias
+                </h2>
+                <a href="#" className="text-secondary/80 text-xs uppercase tracking-widest hover:text-secondary transition-colors">
+                    Ver todas
+                </a>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {NOTICIAS.map((n, i) => (
-                    <Card key={i} className="bg-sacred-black/50 border-gold-corp/10 hover:border-gold-corp/40 transition-all rounded-none group cursor-pointer">
+                    <Card key={i} className="bg-muted/50 border-secondary/10 hover:border-secondary/40 transition-all rounded-none group cursor-pointer shadow-none">
                         <CardHeader>
-                            <Badge variant="outline" className="w-fit border-gold-corp/30 text-gold-corp text-[10px] uppercase rounded-none">
+                            <Badge variant="outline" className="w-fit border-secondary/30 text-secondary text-[10px] uppercase rounded-none">
                                 {n.tag}
                             </Badge>
-                            <CardTitle className="font-serif text-2xl text-parchment group-hover:text-gold-corp transition-colors">
+                            <CardTitle className="font-serif text-2xl text-primary group-hover:text-secondary transition-colors">
                                 {n.title}
                             </CardTitle>
                         </CardHeader>
                         <CardContent>
-                            <p className="text-sm text-parchment/40 uppercase tracking-widest">{n.date}</p>
+                            <p className="text-sm text-primary/50 uppercase tracking-widest">{n.date}</p>
                         </CardContent>
                     </Card>
                 ))}

@@ -1,0 +1,12 @@
+
+/**
+ * Fábrica de repositorios INDICE
+ *
+ * Estas funciones crean una instancia de un repositorio concreto que se utilizará
+ * en la aplicación para gestionar las llamadas a sus tablas.
+ * 
+ * El objetivo de este patrón es abstraer la implementación real (en este caso,
+ * Supabase) del resto del código, de modo que si en el futuro se cambia la
+ * fuente de datos (por ejemplo, a una API REST o a otro proveedor),
+ * no sea necesario modificar el resto de la aplicación.
+ */

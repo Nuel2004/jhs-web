@@ -7,6 +7,7 @@ import { RolesSection } from "@/components/landing/RolesSection";
 import { GpsSection } from "@/components/landing/GpsSection";
 import { TiendaSection } from "@/components/landing/TiendaSection";
 import { CtaFinal } from "@/components/landing/CtaFinal";
+import { VerseOfTheDay } from "@/components/landing/VerseOfTheDay";
 
 export default function LandingPage() {
     return (
@@ -14,8 +15,9 @@ export default function LandingPage() {
             <Navbar />
 
             <Hero />
+            <VerseOfTheDay />
             <StatsBar />
-            <FeaturesSection />
+            {/* <FeaturesSection /> */}
             <RolesSection />
             <GpsSection />
             <TiendaSection />
