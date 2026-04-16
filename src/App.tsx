@@ -1,18 +1,28 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
 import LandingPage from "./pages/LandingPage";
-import LoginPage from "./pages/Loginpage";
-import RegisterPage from "./pages/Registerpage";
+import LoginPage from "./pages/auth/LoginPage";
+import RegisterPage from "./pages/auth/RegisterPage";
 
 function App() {
-    return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<LandingPage />} />
-                <Route path="/login" element={<LoginPage />} />
-                <Route path="/registro" element={<RegisterPage />} />
-            </Routes>
-        </BrowserRouter>
-    );
+  return (
+    <Router>
+      {/* Notificaciones globales */}
+      <Toaster position="top-center" reverseOrder={false} />
+      
+      <Routes>
+        {/* Inicio */}
+        <Route path="/" element={<LandingPage />} />
+        
+        {/* Autenticación */}
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/registro" element={<RegisterPage />} />
+        
+        {/* Aquí podrías añadir el Dashboard en el futuro */}
+        {/* <Route path="/dashboard" element={<Dashboard />} /> */}
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;

@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { SectionLabel } from "./Helpers";
 
 const PRODUCTOS = [
-    { icon: "🌿", nombre: "Estampita hermandad", desc: "Palma rizada artesanal para procesión", precio: "25€" },
+    { icon: "🌿", nombre: "Estampita hermandad", desc: "Estampita oficial de nuestra imagen de Jesús.", precio: "2€" },
     { icon: "🌱", nombre: "Palma", desc: "Palma para niños o acompañamiento", precio: "10€" },
     { icon: "🏅", nombre: "Pin hermandad", desc: "Medalla oficial bañada en plata", precio: "3€" },
     { icon: "👘", nombre: "Traje completo", desc: "Traje completo de cofrade, bajo pedido", precio: "80€" },

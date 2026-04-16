@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { GoldenDivider } from "./Helpers";
+import { Link } from "react-router-dom";
 
 export function CtaFinal() {
     return (
@@ -10,9 +11,11 @@ export function CtaFinal() {
                     Forma parte de la hermandad
                 </h2>
                 <div className="flex gap-4 justify-center flex-wrap">
-                    <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-none px-10 py-6 h-auto">
-                        Solicitar Alta
-                    </Button>
+                    <Link to="/login">
+                        <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-none px-10 py-6 h-auto">
+                            Solicitar Alta
+                        </Button>
+                    </Link>
                     <Button variant="outline" className="border-secondary text-secondary hover:bg-secondary/10 rounded-none px-10 py-6 h-auto">
                         Más información
                     </Button>

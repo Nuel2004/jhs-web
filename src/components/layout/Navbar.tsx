@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const NAV_LINKS = ["Historia", "Funciones", "Procesión", "Tienda"];
 
@@ -22,9 +23,11 @@ export function Navbar() {
                 ))}
             </ul>
 
-            <Button className="font-serif text-[11px] tracking-[0.15em] uppercase bg-primary text-primary-foreground hover:bg-primary/90 rounded-none px-6 cursor-pointer">
-                Hacerse Hermano
-            </Button>
+            <Link to="/login">
+                <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-none font-serif text-xs tracking-widest uppercase px-8 py-6">
+                    Hacerse Hermano
+                </Button>
+            </Link>
         </nav>
     );
 }

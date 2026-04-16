@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { GoldenDivider } from "./Helpers";
+import { Link } from "react-router-dom";
 
 export function Hero() {
   return (
@@ -16,11 +17,11 @@ export function Hero() {
 
         <h1 className="font-display text-5xl md:text-7xl leading-[1.15] text-primary mb-2">
           Hermandad<br />
-          <span className="text-secondary">Jesús Salvador</span>
+          <span className="text-secondary">Jesús Salvador de los Hombres</span>
         </h1>
 
         <p className="font-body text-sm md:text-lg tracking-[0.25em] uppercase text-primary/50 mb-8">
-          De los Hombres de Montijo
+          de Montijo
         </p>
 
         <GoldenDivider />
@@ -31,9 +32,11 @@ export function Hero() {
         </p>
 
         <div className="flex gap-4 justify-center flex-wrap">
-          <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-none px-10 py-6 h-auto">
-            Únete a la Hermandad
-          </Button>
+          <Link to="/login">
+            <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-none font-serif text-xs tracking-widest uppercase px-8 py-6">
+              Hacerse Hermano
+            </Button>
+          </Link>
           <Button
             variant="outline"
             className="border-secondary text-secondary hover:bg-secondary/10 rounded-none px-10 py-6 h-auto"

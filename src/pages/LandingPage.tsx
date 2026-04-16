@@ -2,7 +2,6 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/landing/Hero";
 import { StatsBar } from "@/components/landing/StatsBar";
-import { FeaturesSection } from "@/components/landing/FeaturesSection";
 import { RolesSection } from "@/components/landing/RolesSection";
 import { GpsSection } from "@/components/landing/GpsSection";
 import { TiendaSection } from "@/components/landing/TiendaSection";
@@ -17,7 +16,6 @@ export default function LandingPage() {
             <Hero />
             <VerseOfTheDay />
             <StatsBar />
-            {/* <FeaturesSection /> */}
             <RolesSection />
             <GpsSection />
             <TiendaSection />
